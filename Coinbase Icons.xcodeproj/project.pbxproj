@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3AB9523E22795336006B8E89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9523D22795336006B8E89 /* AppDelegate.swift */; };
-		3AB9524022795336006B8E89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9523F22795336006B8E89 /* ViewController.swift */; };
+		3AB9524022795336006B8E89 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9523F22795336006B8E89 /* CoinViewController.swift */; };
 		3AB9524322795336006B8E89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB9524122795336006B8E89 /* Main.storyboard */; };
 		3AB9524522795337006B8E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB9524422795337006B8E89 /* Assets.xcassets */; };
 		3AB9524822795337006B8E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB9524622795337006B8E89 /* LaunchScreen.storyboard */; };
+		3AB95250227954D4006B8E89 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9524F227954D4006B8E89 /* CoinViewModel.swift */; };
+		3AB9525222795531006B8E89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB9525122795531006B8E89 /* Constants.swift */; };
+		3AB95254227956A4006B8E89 /* CoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB95253227956A4006B8E89 /* CoinCollectionViewCell.swift */; };
+		8A8D8C5EB7B92CD9E5252915 /* Pods_Coinbase_Icons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B3732F0E46AE4DED11800 /* Pods_Coinbase_Icons.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AB9523A22795336006B8E89 /* Coinbase Icons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coinbase Icons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB9523D22795336006B8E89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3AB9523F22795336006B8E89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AB9523F22795336006B8E89 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		3AB9524222795336006B8E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AB9524422795337006B8E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AB9524722795337006B8E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AB9524922795337006B8E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB9524F227954D4006B8E89 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		3AB9525122795531006B8E89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3AB95253227956A4006B8E89 /* CoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCollectionViewCell.swift; sourceTree = "<group>"; };
+		96125787716875B59255D238 /* Pods-Coinbase Icons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinbase Icons.debug.xcconfig"; path = "Target Support Files/Pods-Coinbase Icons/Pods-Coinbase Icons.debug.xcconfig"; sourceTree = "<group>"; };
+		F69B3732F0E46AE4DED11800 /* Pods_Coinbase_Icons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coinbase_Icons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB4063A824C0AFDFB59D4B3 /* Pods-Coinbase Icons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coinbase Icons.release.xcconfig"; path = "Target Support Files/Pods-Coinbase Icons/Pods-Coinbase Icons.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8D8C5EB7B92CD9E5252915 /* Pods_Coinbase_Icons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				3AB9523C22795336006B8E89 /* Coinbase Icons */,
 				3AB9523B22795336006B8E89 /* Products */,
+				93C8674128DA89BF59EC5E65 /* Pods */,
+				E638C299DFBC696CF2487D20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,43 @@
 		3AB9523C22795336006B8E89 /* Coinbase Icons */ = {
 			isa = PBXGroup;
 			children = (
+				3AB9524922795337006B8E89 /* Info.plist */,
 				3AB9523D22795336006B8E89 /* AppDelegate.swift */,
-				3AB9523F22795336006B8E89 /* ViewController.swift */,
-				3AB9524122795336006B8E89 /* Main.storyboard */,
+				3AB95255227956AD006B8E89 /* Coin View */,
+				3AB9525122795531006B8E89 /* Constants.swift */,
 				3AB9524422795337006B8E89 /* Assets.xcassets */,
 				3AB9524622795337006B8E89 /* LaunchScreen.storyboard */,
-				3AB9524922795337006B8E89 /* Info.plist */,
+				3AB9524122795336006B8E89 /* Main.storyboard */,
 			);
 			path = "Coinbase Icons";
+			sourceTree = "<group>";
+		};
+		3AB95255227956AD006B8E89 /* Coin View */ = {
+			isa = PBXGroup;
+			children = (
+				3AB9523F22795336006B8E89 /* CoinViewController.swift */,
+				3AB9524F227954D4006B8E89 /* CoinViewModel.swift */,
+				3AB95253227956A4006B8E89 /* CoinCollectionViewCell.swift */,
+			);
+			path = "Coin View";
+			sourceTree = "<group>";
+		};
+		93C8674128DA89BF59EC5E65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96125787716875B59255D238 /* Pods-Coinbase Icons.debug.xcconfig */,
+				FFB4063A824C0AFDFB59D4B3 /* Pods-Coinbase Icons.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E638C299DFBC696CF2487D20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F69B3732F0E46AE4DED11800 /* Pods_Coinbase_Icons.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AB9524C22795337006B8E89 /* Build configuration list for PBXNativeTarget "Coinbase Icons" */;
 			buildPhases = (
+				F755DBA244A6A1F22308B459 /* [CP] Check Pods Manifest.lock */,
 				3AB9523622795336006B8E89 /* Sources */,
 				3AB9523722795336006B8E89 /* Frameworks */,
 				3AB9523822795336006B8E89 /* Resources */,
+				2030E559CE18FA4F292D8C4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +174,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2030E559CE18FA4F292D8C4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coinbase Icons/Pods-Coinbase Icons-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coinbase Icons/Pods-Coinbase Icons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F755DBA244A6A1F22308B459 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coinbase Icons-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AB9523622795336006B8E89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AB9524022795336006B8E89 /* ViewController.swift in Sources */,
+				3AB9524022795336006B8E89 /* CoinViewController.swift in Sources */,
+				3AB95250227954D4006B8E89 /* CoinViewModel.swift in Sources */,
+				3AB95254227956A4006B8E89 /* CoinCollectionViewCell.swift in Sources */,
 				3AB9523E22795336006B8E89 /* AppDelegate.swift in Sources */,
+				3AB9525222795531006B8E89 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +376,7 @@
 		};
 		3AB9524D22795337006B8E89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96125787716875B59255D238 /* Pods-Coinbase Icons.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,12 +389,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jadehopper.Coinbase-Icons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3AB9524E22795337006B8E89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB4063A824C0AFDFB59D4B3 /* Pods-Coinbase Icons.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jadehopper.Coinbase-Icons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
