@@ -41,7 +41,7 @@ class CoinViewModel {
         let url = Constants.API_URL
         let request = URLRequest(url: url)
 
-        let task = session.dataTask(with: request) { [weak self] data, response, _ in
+        let task = session.dataTask(with: request) { [weak self] data, _, _ in
 
             DispatchQueue.main.async {
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false

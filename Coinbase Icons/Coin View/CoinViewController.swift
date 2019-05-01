@@ -22,7 +22,7 @@ class CoinViewController: UIViewController {
     private func loadData() {
         viewModel.fetchData { [weak self] result in
             switch result {
-            case .success(_):
+            case .success:
                 DispatchQueue.main.async {
                     self?.collectionView.reloadData()
                 }
