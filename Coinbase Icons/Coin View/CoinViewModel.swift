@@ -14,7 +14,7 @@ enum NetworkError: Error {
     case somethingWentWrong(message: String)
 }
 
-/// The data structure for each bike stand
+/// The data structure for each coin
 struct Coin {
     let symbol: String
     let name: String
@@ -64,7 +64,7 @@ class CoinViewModel {
         task.resume()
     }
 
-    /// Converts that delicious XML into something we can use
+    /// Converts that delicious HTML into something we can use
     private func parseHTML(_ data: Data) -> [Coin]? {
         guard let doc = try? HTML(html: data, encoding: .utf8) else {
             return nil
