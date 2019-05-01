@@ -46,7 +46,7 @@ extension CoinViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "coinCollectionViewCell",
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CoinCollectionViewCell.identifier,
                                                             for: indexPath) as? CoinCollectionViewCell else {
             fatalError("Could not dequeue cell")
         }

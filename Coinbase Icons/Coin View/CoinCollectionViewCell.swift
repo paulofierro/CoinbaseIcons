@@ -15,6 +15,8 @@ class CoinCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var symbolLabel: UILabel!
 
+    static let identifier = "coinCollectionViewCell"
+
     var coin: Coin? {
         didSet {
             guard let coin = coin, let url = URL(string: coin.iconURL) else { return }
